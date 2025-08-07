@@ -1,0 +1,39 @@
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid #892651;
+}
+
+.title {
+    font-weight: 800;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.artist {
+    font-style: normal;
+}
+
+.infos {
+    font-style: italic;
+    font-weight: 400;
+    gap: .5rem;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #892651;
+    background-color: #FDFCDC;
+    box-shadow: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    color: dimgray;
+    background-color:#FDFCDC;
+}

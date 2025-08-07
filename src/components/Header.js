@@ -1,8 +1,7 @@
-import './Header.css';
+import './componentsStyles/Header.css';
 
 function Header() {
   return (
-    <>
       <header class="main-title">
           <h1 class="company-name">CLEMENT<span class="seven">MARTIN</span><span class="nine">FASQUEL</span></h1>
           <button class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -19,7 +18,6 @@ function Header() {
               </ul>
           </nav>
       </header>
-    </>
   );
 }
 

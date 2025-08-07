@@ -1,0 +1,12 @@
+@media screen and (min-width: 701px) {
+    .searchResult {
+        width: 45%;
+        margin: 1rem 2rem;
+    }
+    
+    .result {
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 0;
+    }
+}

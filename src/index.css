@@ -18,6 +18,11 @@ h3 {
     Font-weight: 700;
     Font-size: 24px;
     Font-family: "Yrsa";
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .container {

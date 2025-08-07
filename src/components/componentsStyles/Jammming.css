@@ -1,0 +1,8 @@
+.presentation {
+    text-align: center;
+    margin: 1rem;
+}
+
+.results-playlist-container {
+    display: flex;
+}

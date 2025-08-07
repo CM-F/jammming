@@ -1,8 +1,7 @@
-import './Acknoledgments.css'
+import './componentsStyles/Acknoledgments.css'
 
 function Acknoledgments() {
   return (
-    <>
         <section id="acknoledgments">
             <div class="breaking-news">
                 <h2>ACKNOWLEDGMENTS</h2>
@@ -15,7 +14,6 @@ function Acknoledgments() {
                 </div>
             </div>
         </section>
-    </>
   );
 }
 
