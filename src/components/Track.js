@@ -1,18 +1,31 @@
+import { useCallback } from 'react';
 import './componentsStyles/Track.css';
 
-function Track() {
+function Track(props) {
+  const addTrack = useCallback ((event) => {props.onAdd(props.track);}, [props.onAdd, props.track]);
+  const removeTrack = useCallback ((event) => {props.onRemove(props.track);}, [props.onAdd, props.track]);
+
+  const renderAction = () => {
+    if (props.isRemoval) {
+      return (
+        <button className="track-action" onClick={removeTrack}>-</button>
+      );
+    }
+    return (
+      <button className="track-action" onClick={addTrack}>+</button>
+    )
+  }
+
   return (
-    <div class="track">
-        <div class="title">
-            <p class="name-title">Hit That</p>
-            <div class="infos">
-                <p class="artist">The Offsprings</p>
-                <p class="album">Lorem Ipsum Jusqua je ne sais ou encore et toujours plus</p>
-                <p class="year">2005</p>
+    <div className="track">
+        <div className="title">
+            <p className="name-title">{props.track.name}</p>
+            <div className="infos">
+                <p><span className="artist">{props.track.artist}</span> | {props.track.album}</p>
             </div>
         </div>
-        <div class="removeButton">
-            <button class="button">+</button>
+        <div>
+            {renderAction()}
         </div>
     </div>
 
