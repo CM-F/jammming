@@ -1,14 +1,12 @@
 import './componentsStyles/SearchResults.css';
-import Track from './Track';
+import Tracklist from './Tracklist';
 
-function SearchResults() {
+function SearchResults(props) {
   return (
     <div class="searchResult">
         <h3>Results</h3>
         <div class="result">
-            <Track />
-            <Track />
-            <Track />
+            <Tracklist tracks={props.searchResults} onAdd={props.onAdd}/>
         </div>
     </div>
   );
