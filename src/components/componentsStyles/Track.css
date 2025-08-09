@@ -12,16 +12,15 @@
 }
 
 .artist {
-    font-style: normal;
+    font-style: italic;
 }
 
 .infos {
-    font-style: italic;
     font-weight: 400;
     gap: .5rem;
 }
 
-.button {
+.track-action {
     font-weight: 700;
     font-size: 2rem;
     color: #892651;
@@ -29,11 +28,11 @@
     box-shadow: none;
 }
 
-.button:hover {
+.track-action:hover {
     cursor: pointer;
 }
 
-.button:active {
+.track-action:active {
     color: dimgray;
     background-color:#FDFCDC;
 }
