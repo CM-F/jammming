@@ -1,13 +1,20 @@
-import './componentsStyles/Tracklist.css';
 import Track from './Track';
+import './componentsStyles/Tracklist.css';
 
-function Tracklist() {
+function Tracklist(props) {
+  const tracks = props.tracks || [];
   return (
-    <div class="tracklist">
-        <Track />
-
+    <div className="tracklist">
+      {tracks.map((track) => {
+        return (
+          <Track 
+            track={track}
+            key={track.id}
+            onAdd={props.onAdd}
+          />
+        );
+      })}
     </div>
-
   );
 }
 
