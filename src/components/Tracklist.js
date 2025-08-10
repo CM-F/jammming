@@ -1,3 +1,4 @@
+import React from 'react';
 import Track from './Track';
 import './componentsStyles/Tracklist.css';
 
@@ -11,6 +12,8 @@ function Tracklist(props) {
             track={track}
             key={track.id}
             onAdd={props.onAdd}
+            isRemoval={props.isRemoval}
+            onRemove={props.onRemove}
           />
         );
       })}
