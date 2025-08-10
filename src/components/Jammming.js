@@ -49,7 +49,7 @@ function Jammming() {
                 <SearchBar />
                 <div class="results-playlist-container">
                     <SearchResults searchResults={searchResults} onAdd={addTrack}/>
-                    <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} onSave={savePlaylist} />
+                    <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onNameChange={updatePlaylistName} onRemove={removeTrack} onSave={savePlaylist} />
                 </div>
             </div>
         </section>
