@@ -20,9 +20,9 @@ function Jammming() {
 
     const addTrack = useCallback(
         (track) => {
-            if (playlistTracks.some((savedTrack) => savedTrack.id === track.id)){
+            if (playlistTracks.some((savedTrack) => savedTrack.id === track.id))
                 return;
-            }
+            
             setPlaylistTracks((prevTracks) => [...prevTracks, track]);
         },
         [playlistTracks] 

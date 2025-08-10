@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import Tracklist from "./Tracklist";
 import './componentsStyles/Playlist.css'
 
@@ -15,7 +15,7 @@ function Playlist(props) {
             <form class="playlistName">
                 <input onChange={handleNameChange} type="text" id="playlistName" name="playlistName" defaultValue={props.playlistName}></input>
             </form>
-            <Tracklist playlistTracks={props.playlistTracks} isRemoval={true} onRemove={props.removeTrack} />
+            <Tracklist tracks={props.playlistTracks} isRemoval={true} onRemove={props.onRemove} />
         </div>
         <button onClick={props.savePlaylist} className="save-button">SAVE TO SPOTIFY</button>
     </div>

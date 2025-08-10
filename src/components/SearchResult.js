@@ -1,3 +1,4 @@
+import React from 'react';
 import './componentsStyles/SearchResults.css';
 import Tracklist from './Tracklist';
 
